@@ -6,7 +6,7 @@
   "main": "build/start.js",
   "scripts": {
     "devstart": "nodemon ./bin/www",
-    "start": "nodemon ./bin/www"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "@overnightjs/core": "^1.6.12",
