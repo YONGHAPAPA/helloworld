@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "strict": false,
+        "baseUrl": "./src", 
+        "outDir": "./dist", 
+        "sourceMap": true, 
+        "alwaysStrict": true,
+        "emitDecoratorMetadata": true,
+        "target": "es6", 
+        "moduleResolution": "node", //Module 참조경로를 Class : 상대경로, node : node_modules 에서 참조플래그
+        "experimentalDecorators": true,        
+    }, 
+    "include": [
+        "src/**/*.ts"
+    ], 
+    "exclude": [
+        "node_modules"
+    ]
+}

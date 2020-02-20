@@ -2,10 +2,15 @@
   "name": "express-template",
   "version": "12.14.1",
   "private": true,
-  "main": "build/start.js",
+  "main": "dist/server.js",
   "scripts": {
+    "build-ts" : "tsc", 
+    "postinstall": "npm run build-ts", 
+    "start": "npm run serve", 
+    "serve": "node dist/server.js",
     "devstart": "nodemon ./bin/www",
-    "start": "node ./bin/www"
+    "watch-node": "nodemon dist/server.js",
+    "dev": "ts-node ./src/server.ts" 
   },
   "dependencies": {
     "@overnightjs/core": "^1.6.12",
